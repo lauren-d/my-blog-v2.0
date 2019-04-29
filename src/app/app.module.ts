@@ -8,7 +8,6 @@ import { HeaderComponent } from './header/header.component';
 import {RouterModule, Routes} from '@angular/router';
 import { PostFormComponent } from './post-form/post-form.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'posts', component: PostListComponent },
@@ -29,7 +28,6 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
