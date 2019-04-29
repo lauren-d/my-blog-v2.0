@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <app-post-list-item *ngFor="let postItem of posts ; let i = index"
+                [post]="postItem" [id]="i"
+  ></app-post-list-item>
+</ul>
